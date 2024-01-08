@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Microservices.Catalog.Core\Microservices.Catalog.Core.csproj" />
+    <ProjectReference Include="..\Microservices.Catalog.Infrastructure\Microservices.Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

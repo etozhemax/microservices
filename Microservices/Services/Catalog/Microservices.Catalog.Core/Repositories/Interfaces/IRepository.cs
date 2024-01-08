@@ -1,11 +1,11 @@
 ﻿namespace Microservices.Catalog.Core.Repositories.Interfaces
 {
-    public interface IRepository<T>
+    public interface IRepository<T, TKey>
     {
         Task<IReadOnlyList<T>> GetAllAsync();
-        Task<T> GetByIdAsync<TKey>(TKey id);
-        Task<T> Create(T entity);
-        Task<bool> Update(T entity);
-        Task<bool> Delete<TKey>(TKey id);
+        Task<T> GetByIdAsync(TKey id);
+        Task<T> CreateAsync(T entity);
+        Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(TKey id);
     }
 }

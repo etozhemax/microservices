@@ -14,4 +14,16 @@
     <ProjectReference Include="..\Microservices.Catalog.Core\Microservices.Catalog.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\Collections\brands.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Collections\products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Collections\types.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

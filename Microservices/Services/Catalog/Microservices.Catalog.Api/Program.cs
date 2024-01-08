@@ -1,6 +1,9 @@
+using Microservices.Catalog.Infrastructure.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+builder.Services.AddInfrastructureServices();
 
 var app = builder.Build();
 
