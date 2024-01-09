@@ -8,24 +8,24 @@ using Microservices.Catalog.Core.Repositories.Interfaces;
 
 namespace Microservices.Catalog.Application.Handlers.Brands
 {
-    public class GetAllBrandsRequestHandler : IRequestHandler<GetAllBrandsQuery, GetAllBrandsQueryResponse>
+    public class GetByIdBrandQueryHandler : IRequestHandler<GetByIdBrandQuery, GetByIdBrandResponse>
     {
         private readonly IRepository<ProductBrandEntity, string> _repository;
 
-        public GetAllBrandsRequestHandler(IRepository<ProductBrandEntity, string> repository)
+        public GetByIdBrandQueryHandler(IRepository<ProductBrandEntity, string> repository)
         {
             _repository = repository;
         }
 
-        public async Task<GetAllBrandsQueryResponse> Handle(GetAllBrandsQuery request, CancellationToken cancellationToken)
+        public async Task<GetByIdBrandResponse> Handle(GetByIdBrandQuery request, CancellationToken cancellationToken)
         {
-            var brandsEntities = await _repository.GetAllAsync();
-            
-            var brandsDtos = CatalogMapper.Mapper.Map<IReadOnlyList<BrandDto>>(brandsEntities);
+            var brandsEntity = await _repository.GetByIdAsync(request.Id);
 
-            return new GetAllBrandsQueryResponse
+            var brandsDto = CatalogMapper.Mapper.Map<BrandDto>(brandsEntity);
+
+            return new GetByIdBrandResponse
             {
-                Brands = brandsDtos
+                Brand = brandsDto
             };
         }
     }
