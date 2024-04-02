@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{94
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{07BA6001-2C2A-4C55-8578-D1AAB728EA46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Catalog.Api", "Services\Catalog\Microservices.Catalog.Api\Microservices.Catalog.Api.csproj", "{AD2608D4-A6EE-4623-AB35-C54582708DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.Catalog.Api", "Services\Catalog\Microservices.Catalog.Api\Microservices.Catalog.Api.csproj", "{AD2608D4-A6EE-4623-AB35-C54582708DA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Catalog.Core", "Services\Catalog\Microservices.Catalog.Core\Microservices.Catalog.Core.csproj", "{D4E1005E-AC41-4482-A802-535EC42FF5FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.Catalog.Core", "Services\Catalog\Microservices.Catalog.Core\Microservices.Catalog.Core.csproj", "{D4E1005E-AC41-4482-A802-535EC42FF5FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Catalog.Application", "Services\Catalog\Microservices.Catalog.Application\Microservices.Catalog.Application.csproj", "{343E06EB-A8ED-4ACA-B5DF-9D30443CC6BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.Catalog.Application", "Services\Catalog\Microservices.Catalog.Application\Microservices.Catalog.Application.csproj", "{343E06EB-A8ED-4ACA-B5DF-9D30443CC6BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Catalog.Infrastructure", "Services\Catalog\Microservices.Catalog.Infrastructure\Microservices.Catalog.Infrastructure.csproj", "{8A5186BB-9B89-4753-BD06-202A03348592}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.Catalog.Infrastructure", "Services\Catalog\Microservices.Catalog.Infrastructure\Microservices.Catalog.Infrastructure.csproj", "{8A5186BB-9B89-4753-BD06-202A03348592}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3AD3D07D-23C7-41EA-AE93-8B98C797FFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{8A5186BB-9B89-4753-BD06-202A03348592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A5186BB-9B89-4753-BD06-202A03348592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A5186BB-9B89-4753-BD06-202A03348592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD3D07D-23C7-41EA-AE93-8B98C797FFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD3D07D-23C7-41EA-AE93-8B98C797FFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD3D07D-23C7-41EA-AE93-8B98C797FFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD3D07D-23C7-41EA-AE93-8B98C797FFCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

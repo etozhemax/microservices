@@ -1,0 +1,13 @@
+﻿@if (TempData["Toastr_Success"] != null)
+{
+    <script>
+        toastr.success('@(TempData["Toastr_Success"])');
+    </script>
+}
+
+@if (TempData["Toastr_Error"] != null)
+{
+    <script>
+        toastr.error('@(TempData["Toastr_Error"])');
+    </script>
+}

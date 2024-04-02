@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_db:/c/data/db
+
+networks:
+  default:
+    name: microservices_default
+    external: true
+volumes:
+  mongo_db:

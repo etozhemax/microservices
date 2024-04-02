@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
+using Microservices.Catalog.Application.Responses.Products;
+using Microservices.Catalog.Core.Entities;
 
 namespace Microservices.Catalog.Application.Commands.Products
 {
-    internal class CreateProductCommand
+    public class CreateProductCommand : IRequest<CreateProductResponse>
     {
+        public ProductEntity Product { get; set; }
     }
 }
